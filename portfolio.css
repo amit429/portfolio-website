@@ -1,0 +1,484 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.start{
+    background-color: black;
+    height: 600px;
+    padding: 10px;
+    clip-path:polygon(0 0,100% 0,100% 100%,70% 90%,0 100%);
+}
+
+nav .right ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 150px;
+}
+
+nav .right ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    float: left;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+nav a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+nav .right button{
+    float: right;
+    padding: 10px;
+    margin-right: 150px;
+    margin-top: 20px;
+    background-color: aqua;
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+nav ul li :hover{
+    color: brown;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+nav .right button:hover{
+    background-color: transparent;
+    border-color: aqua;
+    color: antiquewhite;
+    transition: 0.5s;
+}
+
+.row{
+    display: flex;
+   align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 h1,p{
+    color:antiquewhite;
+    display: flex;
+    flex-basis: 1;
+    margin-top: 0px;
+    font-family: sans-serif;
+}
+
+ .col-2 img{
+     margin: auto;
+     padding: 30px;
+     align-content: center;
+     display: flex;
+     flex-basis: 1;
+     flex-grow: 1;
+     margin-top: 0;
+}
+
+.col-2 button{
+    padding: 10px;
+    background: transparent;
+    color: antiquewhite;
+    border: solid 2px  aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.col-2 button:hover{
+    background-color: aqua;
+    border: transparent;
+    transition: 0.5s;
+    color: blueviolet;
+    font-weight: 400;
+}
+
+.about{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.container{
+    align-content: center;
+    display: flex;
+}
+
+.container .content{
+    flex-basis: 1;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 25px;
+}
+
+.container .image{
+    margin-left: 300px;
+}
+
+.container p{
+    color: darkgrey;
+    font-family:inherit;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.content h1{
+font-family: fantasy;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color:darkcyan;
+}
+   
+.service h1{
+    text-align: center;
+    color:limegreen;
+    padding: 20px;
+    text-shadow: 2px 2px 2px blue;
+}
+
+.main{
+    margin-top: 50px;
+    background-color:#D8D8D8;
+    height: 600px;
+}
+
+.service .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 60px;
+    grid-column-gap: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 30px;
+}
+
+.service .card-wrapper .card{
+    background-color: whitesmoke;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.service .card-wrapper .card p{
+    color: black;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service .card-wrapper .card img{
+    position: absolute;
+    top: -25%;
+    transform: translateX(-50%);
+    left:50%;
+   
+}
+
+.service .card-wrapper .card:hover{
+    background-color: black;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.service .card-wrapper .card p:hover{
+    color:antiquewhite;
+    transition: 0.3s;
+}
+
+.freelancer{
+    text-align: center;
+    padding:90px; 
+    background-image:url(pexels-photo-1936299.jpeg);
+    background-position: center;
+     clip-path:polygon(0 0,100% 0,100% 100%,70% 80%,0 100%);
+}
+
+.freelancer button{
+    padding: 10px;
+    background-color: aqua;
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.freelancer button:hover{
+     background-color: transparent;
+    border-color: aqua;
+    color: antiquewhite;
+    transition: 0.5s;
+}
+
+.freelancer h1,h3{
+    color:white;
+    font-family:serif;
+}
+
+.clients{
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #f12711, #f5af19);
+    clip-path:polygon(0 0,10% 10%,100% 0,100% 100%,0 100%);
+ }
+
+.clients p{
+    color:black;
+    text-align:center;
+}
+
+.clients h1{
+    font-family: sans-serif;
+    color:darkblue;
+    text-shadow: 2px 2px 3px limegreen;
+}
+
+.col-3{
+    flex-basis: 25%;
+    min-width: 300px;
+    margin-top: 50px;
+    background-color:#D8D8D8; 
+    padding: 10px;
+    column-gap:0px;
+    cursor: pointer;
+    transition: 0.5s;
+   }
+
+.col-3 img{
+    padding: 20px;
+}
+
+.col-3:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.work {
+    text-align: center;
+    padding: 20px;
+}
+
+.work .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+}
+
+.work .card-wrapper .card{
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.work .card-wrapper .card .overlay a{
+    color:black;
+    text-decoration: none;
+    font-family: fantasy;
+    font-weight: 400;
+    font-size:40px;
+    
+}
+
+.work .card-wrapper .card:hover .overlay{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.blog{
+    padding: 50px;
+    background-color:black;
+    height:1000px;
+    clip-path:polygon(0 0,100% 0,100% 100%,70% 90%,0 100%);
+}
+
+.blog h1{
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 0;
+}
+
+.blog .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    margin-left: 80px;
+    margin-right: 30px;
+}
+
+.blog .card-wrapper .card{
+    background-color:white;
+    padding: 50px;
+}
+
+.blog .card-wrapper .card .img{
+    width: 100%;
+}
+
+.blog .card-wrapper .card p{
+    color:dimgrey;
+}
+
+.companies h1{
+    text-align: center;
+}
+
+.companies{
+    padding: 30px;
+}
+
+.image-slider{
+    margin: 50px auto;
+     width: 700px;
+    height: 400px;
+    animation-name: image;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+   background-image: url(1.jpg);
+    background-size: contain;
+   box-shadow: 0px 0px 10px black;
+   
+}
+
+@keyframes image{
+    0%{background-image: url(1.jpg);}
+    35%{background-image: url(2.jpg);}
+    75%{background-image: url(3.jpg);}
+    100%{background-image: url(4.jpg);}
+}
+
+span::before { 
+     content: "GOOGLE :- 2YRS";         animation-name: animate;            animation-duration: 15s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            padding-left: 10px; 
+}
+
+@keyframes animate { 
+  
+            0% { 
+                content: "GOOGLE :- 2YRS"; 
+            } 
+    25%{
+        content:"APPLE :- 1YR"
+    }
+  
+            50% { 
+                content: "MICROSOFT :- 2YRS"; 
+            } 
+  
+            75% { 
+                content: "TESLA :- 3YRS"; 
+            } 
+} 
+
+
+.contact{
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+    padding: 20px;
+}
+
+.contact .col-3{
+    background: none;
+    padding: 20px;
+}
+
+form{
+    padding: 30px;
+}
+
+form .person-info{
+    padding: 40px;
+    align-items: flex-end;
+    text-align:center;
+}
+
+form .person-info input{
+    padding: 10px;
+    width: 300px;
+}
+
+form .topic,.details{
+    padding: 40px;
+    align-items: flex-end;
+    text-align:center;
+    padding-top: 0;
+}
+
+form .topic input{
+    width: 630px;
+    padding:10px;
+    
+}
+
+form .details input{
+     width: 570px;
+    padding:40px;
+}
+
+form button{
+     background-color: aqua;
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+}
+
+form button:hover{
+     background-color: transparent;
+    border-color: aqua;
+    color: antiquewhite;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
